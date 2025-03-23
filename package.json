@@ -1,0 +1,38 @@
+{
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "name": "lr1",
+  "version": "1.0.0",
+  "description": "serve_part",
+  "main": "lr1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lr1.js",
+    "server": "nodemon lr1.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "lr1",
+    "ii",
+    "react"
+  ],
+  "author": "gurid",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "bootstrap": "^5.3.3",
+    "config": "^3.3.12",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "react-router-dom": "^7.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
