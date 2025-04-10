@@ -54,7 +54,7 @@ function App() {
             Установление диагноза
           </Link>
         </div>
-        <div className="container col-8 p-3" id="con">
+        <div className="container col-10 p-3" id="con">
           <Routes>
             <Route
               path="/add-symptom"
@@ -169,10 +169,14 @@ function App() {
                     chooseDis();
                   }}
                 >
-                  <h1
+                  <h4
                     id="dis"
+                    className="p-3 mb-2 bg-success-subtle text-success-emphasis"
+                  ></h4>
+                  <h5
+                    id="all"
                     className="p-3 mb-2 bg-primary-subtle text-primary-emphasis"
-                  ></h1>
+                  ></h5>
                   <CheckList clas={"check"} col={symptoms} type={"checkbox"} />
                   <button
                     type="submit"
